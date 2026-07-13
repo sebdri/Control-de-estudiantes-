@@ -1,7 +1,6 @@
 from New_menu import show_menu
 from Students_entry_data import add_student, show_students_data, student_top_three, obtain_all_average
-from export_data import export_data
-from  Import import import_data
+import transfer_data
 
 def main():
     students = []
@@ -13,29 +12,29 @@ def main():
             student = add_student()
             students.append(student)
             
-            print("\nEstudiante agregado correctamente.\n")
+            print("\nStudent successfully added\n")
 
         elif option == 2:
             show_students_data(students)
             
 
         elif option == 3:
-            # show_students_data(students) Esto no es valido porque mi funcion no hara nada 
-            student_top_three(students) #esto es lo correcto
+            student_top_three(students) 
          
 
         elif option == 4:
             obtain_all_average(students)
 
         elif option == 5:
-            export_data("Exportar.csv",students)
+            transfer_data("export.csv",students)
 
         elif option == 6:
-            students = import_data("Exportar.csv", students)
+            
+            students = transfer_data("export.csv", students)
             show_students_data(students)
 
         elif option == 7:
-            print("Gracias por utilizar el sistema.")
+            print("Thanks for using our sistem")
             break
 
 

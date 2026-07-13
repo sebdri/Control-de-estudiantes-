@@ -1,13 +1,13 @@
 def show_menu():
     while True:
         print("\n===== MENÚ =====")
-        print("1. Agregar estudiante")
-        print("2. Mostrar estudiantes")
-        print("3. Top 3 estudiantes")
-        print("4. Promedio general")
-        print("5. Exportar CSV")
-        print("6. Importar CSV")
-        print("7. Salir")
+        print("1. Add students")
+        print("2. show students")
+        print("3. Top 3 students")
+        print("4. General average")
+        print("5. Export CSV")
+        print("6. Import CSV")
+        print("7. Exit")
 
         try:
             option = int(input("Seleccione una opción: "))
