@@ -1,6 +1,6 @@
 from New_menu import show_menu
 from Students_entry_data import add_student, show_students_data, student_top_three, obtain_all_average
-import transfer_data
+from transfer_data import export_data , import_data
 
 def main():
     students = []
@@ -26,11 +26,11 @@ def main():
             obtain_all_average(students)
 
         elif option == 5:
-            transfer_data("export.csv",students)
+            export_data("export.csv",students)
 
         elif option == 6:
             
-            students = transfer_data("export.csv", students)
+            students = import_data("export.csv", students)
             show_students_data(students)
 
         elif option == 7:
