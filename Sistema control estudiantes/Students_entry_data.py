@@ -11,7 +11,7 @@ def add_student():
             else:
                 print("The score needs to be between 0 & 100.")
         except ValueError:
-            print("Inavalid data.")
+            print("Inavalid data.⚠️")
 
     while True:
         try:
